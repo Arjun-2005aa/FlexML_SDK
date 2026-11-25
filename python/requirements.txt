@@ -1,0 +1,5 @@
+# Prefer: pip install "flexml-companion[all]"   (or pip install ./companion/python from this repo)
+websockets>=12
+zeroconf>=0.130   # optional: automatic discovery by the app
+qrcode>=7.4       # optional: QR code for manual pairing
+numpy>=1.21       # optional: faster point clouds / ROS 2
