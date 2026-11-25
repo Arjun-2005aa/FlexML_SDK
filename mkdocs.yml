@@ -1,0 +1,60 @@
+site_name: FlexML SDK
+site_description: Get live vision, 3D pose, object maps and point clouds from the FlexML iPhone app into Python, ROS 2 and ESP32.
+site_url: https://arjun-2005aa.github.io/FlexML_SDK/
+repo_url: https://github.com/Arjun-2005aa/FlexML_SDK
+repo_name: Arjun-2005aa/FlexML_SDK
+edit_uri: edit/main/docs/
+copyright: MIT License · FlexML SDK
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep orange
+      toggle: { icon: material/weather-night, name: Dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep orange
+      toggle: { icon: material/weather-sunny, name: Light mode }
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc: { permalink: true }
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+exclude_docs: |
+  agents/CLAUDE.md
+
+not_in_nav: |
+  agents/AGENTS.md
+  agents/playbooks/*
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Data reference: data-reference.md
+  - Python library: python-library.md
+  - Robot integration: robot-integration.md
+  - Examples: examples.md
+  - Stream protocol: protocol.md
+  - Models:
+      - Bring your own model: bring-your-own-model.md
+      - AI agent porting kit: agents/README.md
+  - What you can build: use-cases.md

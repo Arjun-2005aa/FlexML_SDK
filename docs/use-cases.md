@@ -1,6 +1,6 @@
 # What you can build with FlexML
 
-Each idea lists the data it uses, the connection, and a sketch. The runnable examples are in [`examples/`](../examples). Data details: [data-reference.md](data-reference.md).
+Each idea lists the data it uses, the connection, and a sketch. The runnable examples are in [`examples/`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples). Data details: [data-reference.md](data-reference.md).
 
 ---
 
@@ -14,7 +14,7 @@ error = d.center[0] - 0.5            # −0.5 … 0.5
 turn = -1.2 * error                  # P controller
 speed = 0.3 if (d.distance or 2.0) > 1.0 else 0.0
 ```
-Runnable: [`examples/python/follow_person.py`](../examples/python/follow_person.py), [`examples/esp32/arduino/FlexML_UDP`](../examples/esp32/arduino/FlexML_UDP), ROS 2: [`examples/ros2/follow_person_node.py`](../examples/ros2/follow_person_node.py).
+Runnable: [`examples/python/follow_person.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/python/follow_person.py), [`examples/esp32/arduino/FlexML_UDP`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples/esp32/arduino/FlexML_UDP), ROS 2: [`examples/ros2/follow_person_node.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/ros2/follow_person_node.py).
 
 ## 2. Object-seeking rover ("find the red cup")
 **Uses:** `set_classes`, `detections[].world` · **Link:** Python
@@ -25,7 +25,7 @@ Send `set_classes` with the target class, rotate until it appears, then drive to
 **Uses:** `map` point cloud, `pose` · **Link:** Python or ROS 2
 
 Project the point cloud onto the floor: points between ~10 cm and your robot's height are obstacles. Grid them at 5 cm and you have an occupancy map for path planning.
-- Python: [`examples/python/occupancy_grid.py`](../examples/python/occupancy_grid.py) writes a PGM image you can open anywhere.
+- Python: [`examples/python/occupancy_grid.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/python/occupancy_grid.py) writes a PGM image you can open anywhere.
 - ROS 2: feed `/flexml/points` to `pointcloud_to_laserscan` or an Nav2 costmap's obstacle layer, with a static transform from `base_link` to `flexml_device`.
 
 ## 4. Visual odometry for robots without encoders
@@ -51,7 +51,7 @@ Two P (or PID) loops on `cx − 500` and `cy − 500`, one per servo. Lock to a 
 ## 8. Room scanning and 3D capture
 **Uses:** `map`, Spaces · **Link:** WebSocket, or export from the app
 
-Collect the coloured cloud live with [`examples/python/save_point_cloud.py`](../examples/python/save_point_cloud.py), or save a Space in the app and share `points.ply`. Open it in MeshLab, CloudCompare, Open3D or Blender, measure rooms, or use it as a prior map for a robot.
+Collect the coloured cloud live with [`examples/python/save_point_cloud.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/python/save_point_cloud.py), or save a Space in the app and share `points.ply`. Open it in MeshLab, CloudCompare, Open3D or Blender, measure rooms, or use it as a prior map for a robot.
 
 ## 9. Dataset collection for your own models
 **Uses:** recordings (`timeline.jsonl` + video), or `flexml serve --log session.jsonl` · **Link:** WebSocket

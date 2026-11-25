@@ -12,3 +12,4 @@ venv/
 occupancy.pgm
 occupancy.npy
 flexml_export/
+site/

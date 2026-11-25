@@ -1,6 +1,6 @@
 # FlexML Stream Protocol (v2)
 
-FlexML sends one JSON object per message, either as WebSocket text frames or as HTTP `POST` bodies (`Content-Type: application/json`). The reference implementation is the [`flexml-companion`](../python) Python package.
+FlexML sends one JSON object per message, either as WebSocket text frames or as HTTP `POST` bodies (`Content-Type: application/json`). The reference implementation is the [`flexml-companion`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/python) Python package.
 
 Every message has these fields:
 

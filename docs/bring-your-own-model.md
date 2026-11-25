@@ -26,7 +26,7 @@ Framework-specific recipes are in the playbooks: [PyTorch](agents/playbooks/pyto
 
 ## Let an AI coding agent do it
 
-Copy [`docs/agents/AGENTS.md`](agents/AGENTS.md) (plus [`CLAUDE.md`](agents/CLAUDE.md) for Claude Code) into your model project and ask your agent to *"port my model to FlexML"*. It converts the model, validates it with `flexml check-model`, compares it against your original, and writes a report. See [docs/agents](agents/README.md).
+Copy [`docs/agents/AGENTS.md`](agents/AGENTS.md) (plus [`CLAUDE.md`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/docs/agents/CLAUDE.md) for Claude Code) into your model project and ask your agent to *"port my model to FlexML"*. It converts the model, validates it with `flexml check-model`, compares it against your original, and writes a report. See [docs/agents](agents/README.md).
 
 ## Check any model before copying it to the phone
 

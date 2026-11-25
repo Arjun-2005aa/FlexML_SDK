@@ -75,7 +75,7 @@ FlexML can send short text lines that a microcontroller reads with `sscanf`, suc
 | | Wi-Fi (UDP) | Bluetooth LE |
 |---|---|---|
 | Turn on | Network Setup › Microcontrollers › **Send over Wi-Fi (UDP)**, then enter the board's IP and port 5005 | Network Setup › Microcontrollers › **Send over Bluetooth LE** |
-| Example | [`examples/esp32/arduino/FlexML_UDP`](../examples/esp32/arduino/FlexML_UDP), [`examples/esp32/micropython/flexml_udp.py`](../examples/esp32/micropython/flexml_udp.py) | [`examples/esp32/arduino/FlexML_BLE`](../examples/esp32/arduino/FlexML_BLE) |
+| Example | [`examples/esp32/arduino/FlexML_UDP`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples/esp32/arduino/FlexML_UDP), [`examples/esp32/micropython/flexml_udp.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/esp32/micropython/flexml_udp.py) | [`examples/esp32/arduino/FlexML_BLE`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples/esp32/arduino/FlexML_BLE) |
 | Commands to the phone | No (use Wi-Fi + WebSocket) | Yes: write text such as `set_threshold 0.5` |
 
 The line format is in [Robot integration](robot-integration.md#compact-format).

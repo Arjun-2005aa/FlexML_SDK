@@ -9,6 +9,8 @@ There are three ways to connect FlexML to a robot:
 
 ## Commands (robot → phone)
 
+<a id="commands-robot--phone"></a>
+
 Send commands as JSON over the WebSocket, or as one line of text over Bluetooth or the `flexml serve` prompt. Every command gets a reply.
 
 ```json
@@ -100,9 +102,9 @@ if (sscanf(line, "O %d %31s %d %d %d %d %d %d", &id, label, &conf, &cx, &cy, &w,
 You can test with the nRF Connect app before writing firmware. Bluetooth runs only while FlexML is in the foreground; keep it open, using screen-off mode if needed.
 
 **Examples:**
-- [`examples/esp32/arduino/FlexML_UDP`](../examples/esp32/arduino/FlexML_UDP): ESP32 over Wi-Fi; steers toward a person.
-- [`examples/esp32/arduino/FlexML_BLE`](../examples/esp32/arduino/FlexML_BLE): ESP32 over Bluetooth; prints detections and forwards commands typed in the Serial Monitor.
-- [`examples/esp32/micropython/flexml_udp.py`](../examples/esp32/micropython/flexml_udp.py): MicroPython over UDP.
+- [`examples/esp32/arduino/FlexML_UDP`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples/esp32/arduino/FlexML_UDP): ESP32 over Wi-Fi; steers toward a person.
+- [`examples/esp32/arduino/FlexML_BLE`](https://github.com/Arjun-2005aa/FlexML_SDK/tree/main/examples/esp32/arduino/FlexML_BLE): ESP32 over Bluetooth; prints detections and forwards commands typed in the Serial Monitor.
+- [`examples/esp32/micropython/flexml_udp.py`](https://github.com/Arjun-2005aa/FlexML_SDK/blob/main/examples/esp32/micropython/flexml_udp.py): MicroPython over UDP.
 
 ---
 

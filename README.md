@@ -2,6 +2,8 @@
 
 **Get live vision, 3D pose, object maps and point clouds from the [FlexML](https://testflight.apple.com/join/pxAZj36a) iPhone/iPad app into your robot, computer or microcontroller.**
 
+📖 **Documentation website: https://arjun-2005aa.github.io/FlexML_SDK/**
+
 FlexML runs any Core ML vision model on the phone's camera, tracks objects in 3D with ARKit (and LiDAR where available), and streams the results over Wi-Fi or Bluetooth. This repository is everything you need on the *receiving* side:
 
 | Folder | What's inside |
